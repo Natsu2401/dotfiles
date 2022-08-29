@@ -21,4 +21,12 @@ cd
 rm -rf /tmp/yay
 
 #yay install
-yay -S cava
+yay -S cava 
+
+echo "neofetch --ascii_distro arch_small" >> ${ZDOTDIR:-$HOME}/.bashrc
+echo "zsh" >> ${ZDOTDIR:-$HOME}/.bashrc
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
