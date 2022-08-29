@@ -1,4 +1,4 @@
-sudo pacman -S --needed base-devel git rofi ncmpcpp mpd bspwm sxhkd ranger picom neovim dunst zsh xfce4-terminal ruby nodejs npm python-pip xdotool polybar
+sudo pacman -S --needed base-devel git rofi ncmpcpp mpd bspwm sxhkd ranger picom neovim dunst zsh xfce4-terminal ruby nodejs npm python-pip xdotool polybar feh
 
 # fonts
 npm i sauce-code-pro
@@ -41,3 +41,5 @@ rm -rf xfce4-terminal
 #config
 cp -rf dotfiles/.fonts ~/
 cp -rf ~/dotfiles/.config/ ~/
+
+feh --bg-scale ~/dotfiles/1.jpg
