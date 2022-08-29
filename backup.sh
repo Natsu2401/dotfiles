@@ -2,4 +2,4 @@
 
 git add -u
 git commit -m "Backup at $(date)"
-git push origin master 
+git push origin main
