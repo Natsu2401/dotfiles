@@ -23,6 +23,7 @@ rm -rf /tmp/yay
 #yay install
 yay -S cava 
 
+#setup terminal
 echo "neofetch --ascii_distro arch_small" >> ${ZDOTDIR:-$HOME}/.bashrc
 echo "zsh" >> ${ZDOTDIR:-$HOME}/.bashrc
 
@@ -30,3 +31,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+#theme terminal
+git clone https://github.com/dracula/xfce4-terminal.git
+mkdir -p ~/.local/share/xfce4/terminal/colorscheme
+cp -r ~/xfce4-terminal/Dracula.theme ~/.local/share/xfce4/terminal/colorscheme
+rm -rf xfce4-terminal
+
+#config
+cp -rf ~/dotfiles/.config/ ~/
