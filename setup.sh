@@ -21,7 +21,8 @@ cd
 rm -rf /tmp/yay
 
 #yay install
-yay -S cava 
+yay -S cava
+yay -S nerd-fonts-source-code-pro
 
 #setup terminal
 echo "neofetch --ascii_distro arch_small" >> ${ZDOTDIR:-$HOME}/.bashrc
