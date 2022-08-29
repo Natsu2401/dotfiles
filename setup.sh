@@ -39,4 +39,5 @@ cp -r ~/xfce4-terminal/Dracula.theme ~/.local/share/xfce4/terminal/colorscheme
 rm -rf xfce4-terminal
 
 #config
+cp -rf dotfiles/.fonts ~/
 cp -rf ~/dotfiles/.config/ ~/
